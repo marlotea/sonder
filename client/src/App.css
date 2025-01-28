@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pinyon-script-regular {
+    font-family: "Pinyon Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+}
+
+.toolbar button {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.22);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.toolbar button:hover {
+    background-color: #ddd;
+}
+
+.editor {
+    padding: 20px;
+    min-height: 200px;
+    max-height: 400px;
+    font-size: 18px;
+    font-family: "Times New Roman", sans-serif;
+    outline: none;
+    background-color: rgba(240, 240, 240, 0.56);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.editor:empty::before {
+    color: #999;
+}
+
+.promptTitle {
+    font-family: "Pinyon Script", serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.submit {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    margin: 0 auto;
+}
+
+button.submit > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+button.submit:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(5px);
+}
+
+button.submit:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+
+#title {
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.about {
+    width: 80vw;
+}

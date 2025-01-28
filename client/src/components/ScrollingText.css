@@ -1,0 +1,35 @@
+body,
+html {
+    overflow: hidden;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    max-height: 100px;
+    width: 90vw;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    margin: 20x 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+}
+
+.scrolling-text-content {
+    color: #fff;
+    font-size: 30px;
+    white-space: nowrap;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin: 2px 0;
+}
+
+.scrolling-text-content.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
